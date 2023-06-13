@@ -1,0 +1,62 @@
+.header-container {
+  position: relative;
+}
+
+.nav-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+  z-index: 999; 
+  position: absolute;
+  animation: floatingAnimation 4s infinite ease-in-out alternate; 
+}
+
+.nav-text {
+  color: white;
+}
+
+.icon-home {
+  top: 30%;
+  left: 15%;
+}
+
+.icon-about {
+  top: 50%;
+  left: 72%;
+}
+
+.icon-contact {
+  top:-17%;
+  left: 84%;
+}
+.icon-projects {
+  position: absolute;
+  top: 50%;
+  left: 72%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.title {
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@keyframes floatingAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
